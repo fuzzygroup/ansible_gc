@@ -1,0 +1,2 @@
+[production]
+ansible_ssh_host=ec2-99-39-100-178.us-east-1.compute.amazonaws.com        ansible_ssh_private_key_file=/Users/sjohnson/.ssh/aws.pem

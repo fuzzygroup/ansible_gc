@@ -1,0 +1,6 @@
+# https://docs.ansible.com/ansible/git_module.html
+- name: Check out from the Git Repo
+  git:
+    repo: "{{ repo }}"
+    dest: "{{ checkout_path }}"
+    version: {{ version }}

@@ -1,0 +1,4 @@
+# https://docs.ansible.com/ansible/shell_module.html
+- name: Restart web server
+  shell: 
+    cmd: "service apache2ctl restart"

@@ -1,0 +1,10 @@
+- hosts: production
+  become: yes
+  remote_user: ubuntu
+  vars:
+    - checkout_path: "/home/gc/code"
+    - repo: "git://foosball.example.org/path/to/repo.git"
+    - version: "release-0.22"
+  roles:
+    - { role: git_pull, tags: git}
+    - { role: web_server_restart, tags: web_server}
